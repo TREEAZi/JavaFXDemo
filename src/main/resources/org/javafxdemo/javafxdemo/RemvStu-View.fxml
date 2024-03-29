@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javafxdemo.javafxdemo.RemvStuView">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="108.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER" cache="true" focusTraversable="false" prefHeight="42.0" prefWidth="100.0" text="删除学生" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Blend mode="LIGHTEN" />
+                     </effect>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="success" alignment="CENTER" focusTraversable="false" prefHeight="15.0" prefWidth="100.0" text="输入不能为空" textAlignment="CENTER" textFill="RED" visible="false">
+                     <padding>
+                        <Insets bottom="-10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="49.0" text="学号:" textAlignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="stuNum" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="remvStu" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#remvStu" prefHeight="41.0" prefWidth="73.0" text="删除" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

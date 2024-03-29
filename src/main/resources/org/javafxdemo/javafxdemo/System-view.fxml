@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javafxdemo.javafxdemo.SystemView">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="186.0" text="StuSystem">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="addStu" focusTraversable="false" mnemonicParsing="false" onAction="#addStu" prefHeight="34.0" prefWidth="90.0" text="addStu">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="removeStu" focusTraversable="false" mnemonicParsing="false" onAction="#removeStu" prefHeight="34.0" prefWidth="90.0" text="removedStu">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="-50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="changeStu" mnemonicParsing="false" onAction="#changeStu" prefHeight="34.0" prefWidth="90.0" text="changStu">
+                     <HBox.margin>
+                        <Insets right="20.0" top="-80.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="90.0" text="Button">
+                     <HBox.margin>
+                        <Insets left="20.0" top="-80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

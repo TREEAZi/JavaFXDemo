@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="202.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.javafxdemo.javafxdemo.ChangeStuView">
+   <children>
+      <AnchorPane fx:id="searchAP" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="205.0" prefWidth="250.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="108.0" prefWidth="250.0">
+                     <children>
+                        <Label alignment="CENTER" cache="true" focusTraversable="false" prefHeight="36.0" prefWidth="148.0" text="修改学生信息" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="LIGHTEN" />
+                           </effect>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="searchError" alignment="CENTER" focusTraversable="false" prefHeight="15.0" prefWidth="100.0" textAlignment="CENTER" textFill="RED" visible="false">
+                           <padding>
+                              <Insets bottom="-10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="250.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="49.0" text="学号:" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="stuNum" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="search" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#searchStu" prefHeight="41.0" prefWidth="73.0" text="查询" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeAP" prefHeight="206.0" prefWidth="250.0" visible="false">
+         <children>
+            <VBox prefHeight="206.0" prefWidth="250.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="47.0" prefWidth="250.0">
+                     <children>
+                        <Label text="修改信息">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="changeError" textFill="RED" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="49.0" text="姓名:" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="stuName" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="49.0" text="班级:" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="stuClassName">
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="change" mnemonicParsing="false" onAction="#changeStuInfo" prefHeight="40.0" prefWidth="90.0" text="修改">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
