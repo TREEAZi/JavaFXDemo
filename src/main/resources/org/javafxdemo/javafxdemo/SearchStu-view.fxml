@@ -74,7 +74,7 @@
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="changeAP" prefHeight="206.0" prefWidth="250.0" visible="false">
+      <AnchorPane fx:id="infoAP" prefHeight="206.0" prefWidth="250.0" visible="false">
          <children>
             <VBox prefHeight="206.0" prefWidth="250.0">
                <children>
@@ -82,7 +82,7 @@
                      <children>
                         <Label text="学生信息">
                            <font>
-                              <Font size="24.0" />
+                              <Font name="System Bold" size="24.0" />
                            </font>
                            <VBox.margin>
                               <Insets top="10.0" />
@@ -104,8 +104,11 @@
                            <children>
                               <Label fx:id="stuName" textFill="#666666">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <HBox.margin>
+                                    <Insets top="1.0" />
+                                 </HBox.margin>
                               </Label>
                            </children>
                         </HBox>
@@ -128,8 +131,11 @@
                            <children>
                               <Label fx:id="stuClassName" textFill="#666666">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
                               </Label>
                            </children>
                         </HBox>
@@ -137,7 +143,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="change" mnemonicParsing="false" onAction="#changeStuInfo" prefHeight="40.0" prefWidth="90.0" text="确定">
+                        <Button fx:id="confirm" mnemonicParsing="false" onAction="#confirmStuInfo" prefHeight="40.0" prefWidth="90.0" text="确定">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>

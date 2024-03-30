@@ -44,7 +44,7 @@
                         <Insets right="20.0" top="-80.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="90.0" text="Button">
+                  <Button fx:id="searchStu" mnemonicParsing="false" onAction="#searchStu" prefHeight="34.0" prefWidth="90.0" text="searchStu">
                      <HBox.margin>
                         <Insets left="20.0" top="-80.0" />
                      </HBox.margin>

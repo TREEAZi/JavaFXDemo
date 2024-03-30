@@ -12,8 +12,8 @@ public class HelloApplication extends Application {
     public static Stage stage;
     public static Stage addStuStage;
     public static Stage changeStuStage;
-
     public static Stage removeStuStage;
+    public static Stage searchStuStage;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -40,6 +40,12 @@ public class HelloApplication extends Application {
         changeStuStage.setTitle("修改学生信息");
         changeStuStage.initModality(Modality.WINDOW_MODAL);
         changeStuStage.initOwner(HelloApplication.stage);
+
+        searchStuStage = new Stage();
+        searchStuStage.setResizable(false);
+        searchStuStage.setTitle("查询学生信息");
+        searchStuStage.initModality(Modality.WINDOW_MODAL);
+        searchStuStage.initOwner(HelloApplication.stage);
 
         setScene(scene);
         HelloApplication.stage.show();

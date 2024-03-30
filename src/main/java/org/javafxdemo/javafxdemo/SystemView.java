@@ -5,18 +5,18 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
-import org.javafxdemo.javafxdemo.stu_system.StuSystem;
 
 import java.io.IOException;
 
-import static org.javafxdemo.javafxdemo.HelloApplication.addStuStage;
-import static org.javafxdemo.javafxdemo.HelloApplication.removeStuStage;
-import static org.javafxdemo.javafxdemo.HelloApplication.changeStuStage;
+import static org.javafxdemo.javafxdemo.HelloApplication.*;
 
 public class SystemView {
 
-    static StuSystem stuSystem = new StuSystem();
+    @FXML
+    public Button changeStu;
+
+    @FXML
+    public Button searchStu;
 
     @FXML
     private Button addStu;
@@ -28,8 +28,6 @@ public class SystemView {
     void addStu(ActionEvent event) throws IOException {
         addStuStage.setScene(new Scene(new FXMLLoader(SystemView.class.getResource("AddStu-view.fxml")).load()));
         addStuStage.show();
-        //stuName.getItems().add("Item 1");
-        //System.out.println(stuName.getItems().getFirst());
     }
 
     @FXML
@@ -42,6 +40,12 @@ public class SystemView {
     void changeStu(ActionEvent event) throws IOException {
         changeStuStage.setScene(new Scene(new FXMLLoader(SystemView.class.getResource("ChangeStu-view.fxml")).load()));
         changeStuStage.show();
+    }
+
+    @FXML
+    void searchStu(ActionEvent event) throws IOException {
+        searchStuStage.setScene(new Scene(new FXMLLoader(SystemView.class.getResource("SearchStu-view.fxml")).load()));
+        searchStuStage.show();
     }
 
 }
