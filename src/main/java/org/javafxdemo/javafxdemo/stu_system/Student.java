@@ -40,6 +40,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return STR."Student{stuNum='\{stuNum}\{'\''}, stuName='\{stuName}\{'\''}, stuClassName='\{stuClassName}\{'\''}\{'}'}";
+        return String.format("Student{stuNum=%s, stuName=%s, stuClassName=%s", stuNum, stuName, stuClassName);
     }
 }

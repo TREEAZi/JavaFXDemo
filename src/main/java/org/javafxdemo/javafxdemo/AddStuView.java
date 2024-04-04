@@ -54,7 +54,7 @@ public class AddStuView {
 
         // 添加学生信息到数据库
         StuSystem.addStudent(student);
-        System.out.println(STR."\{num} \{name} \{className}");
+        System.out.println(num+" "+name+" "+className);
 
         // 关闭窗口
         addStuStage.close();
