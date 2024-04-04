@@ -29,7 +29,7 @@ public class AddStuView {
     private Label success;
 
     @FXML
-    void addStu(ActionEvent event) throws InterruptedException {
+    void addStu(ActionEvent event) {
 
         // 获取输入的学生信息
         String className = stuClassName.getText();
@@ -54,7 +54,7 @@ public class AddStuView {
 
         // 添加学生信息到数据库
         StuSystem.addStudent(student);
-        System.out.println(num+" "+name+" "+className);
+        System.out.printf("num={%s}, name={%s}, className={%s}%n", num, name, className);
 
         // 关闭窗口
         addStuStage.close();
