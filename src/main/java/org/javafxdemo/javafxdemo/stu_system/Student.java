@@ -4,8 +4,7 @@ public class Student {
     private String stuNum, stuName,stuClassName;
 
     public Student(String stuNum, String stuName, String stuClassName) {
-        this.stuNum = stuNum;
-        this.stuName = stuName;
+        this(stuNum, stuName);
         this.stuClassName = stuClassName;
     }
 
@@ -40,6 +39,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("Student{stuNum=%s, stuName=%s, stuClassName=%s", stuNum, stuName, stuClassName);
+        return String.format("Student{stuNum=%s, stuName=%s, stuClassName=%s}", stuNum, stuName, stuClassName);
     }
 }
